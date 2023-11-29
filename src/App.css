@@ -1,0 +1,68 @@
+/* Perustyylien asettelu */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Sovelluksen ylätunnisteen tyyli */
+.App-header {
+  background-color: #282c34;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Navigointipalkin tyylit */
+.App-nav {
+  display: flex;
+  justify-content: space-around;
+  background: #333;
+  padding: 10px 0;
+}
+
+.App-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.App-nav a:hover {
+  background-color: #555;
+}
+
+/* Sisältöalueen tyylit */
+.App-content {
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+}
+
+/* AG-Grid tyylien muokkaus */
+.ag-theme-material {
+  height: 600px;
+  width: 100%;
+}
+
+.ag-header-cell,
+.ag-cell {
+  font-size: 14px;
+}
+
+/* Footer tyyli */
+.App-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
