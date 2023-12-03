@@ -18,6 +18,9 @@ export default function NavigationBar() {
         <Button color="inherit" component={Link} to="/trainingscalendar">
           Training Calendar
         </Button>
+        <Button color="inherit" component={Link} to="/statisticspage">
+          Statistics Page
+        </Button>
       </Toolbar>
     </AppBar>
   );
