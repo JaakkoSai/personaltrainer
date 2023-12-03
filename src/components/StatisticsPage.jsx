@@ -12,7 +12,7 @@ import _ from "lodash";
 
 const fetchTrainingData = async () => {
   const response = await fetch(
-    "http://traineeapp.azurewebsites.net/gettrainings"
+    "https://traineeapp.azurewebsites.net/gettrainings"
   );
   const data = await response.json();
   return data;
