@@ -5,6 +5,7 @@ import "ag-grid-community/styles/ag-theme-material.css";
 import { Button } from "@mui/material";
 import AddCustomer from "./AddCustomer";
 import EditCustomer from "./EditCustomer";
+import ExportCSVButton from "../exportToCSV";
 
 export default function CustomerList() {
   const [customers, setCustomers] = useState([]);
@@ -76,6 +77,7 @@ export default function CustomerList() {
   return (
     <>
       <AddCustomer fetchCustomer={fetchCustomer} />
+      <ExportCSVButton fetchCustomer={fetchCustomer} />
       <div className="ag-theme-material" style={{ height: 600, width: "100%" }}>
         <AgGridReact
           rowData={customers}

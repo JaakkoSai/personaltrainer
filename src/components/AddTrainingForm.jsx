@@ -19,7 +19,7 @@ export default function AddTrainingForm() {
   const findCustomerUrl = async () => {
     try {
       const response = await fetch(
-        "http://traineeapp.azurewebsites.net/api/customers"
+        "https://traineeapp.azurewebsites.net/api/customers"
       );
       const data = await response.json();
       const customers = data.content;
@@ -54,7 +54,7 @@ export default function AddTrainingForm() {
 
     try {
       const response = await fetch(
-        "http://traineeapp.azurewebsites.net/api/trainings",
+        "https://traineeapp.azurewebsites.net/api/trainings",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
